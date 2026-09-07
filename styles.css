@@ -13,7 +13,7 @@ body {
 }
 
 .calculator {
-    width: 320px;
+    width: 360px;
     padding: 20px;
     border-radius: 16px;
     background: #222;
@@ -22,13 +22,13 @@ body {
 
 .display {
     width: 100%;
-    height: 70px;
+    height: 64px;
     margin-bottom: 16px;
     border: none;
     border-radius: 10px;
     background: #111;
     color: #fff;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     text-align: right;
     padding: 0 16px;
 }
@@ -36,16 +36,16 @@ body {
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 8px;
 }
 
 .btn {
-    height: 60px;
+    height: 52px;
     border: none;
     border-radius: 10px;
     background: #3a3a3a;
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: background 0.15s ease, transform 0.1s ease;
 }
@@ -58,6 +58,23 @@ body {
     transform: scale(0.95);
 }
 
+.btn.sci {
+    background: #2c3e50;
+    font-size: 1rem;
+}
+
+.btn.sci:hover {
+    background: #34495e;
+}
+
+#mode-toggle {
+    background: #16a085;
+}
+
+#mode-toggle:hover {
+    background: #1abc9c;
+}
+
 .btn.operator {
     background: #ff9500;
 }
@@ -68,13 +85,8 @@ body {
 
 .btn.equals {
     background: #2ecc71;
-    grid-column: span 2;
 }
 
 .btn.equals:hover {
     background: #45d483;
-}
-
-.btn.zero {
-    grid-column: span 1;
 }
